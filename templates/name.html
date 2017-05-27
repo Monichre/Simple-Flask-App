@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Name</title>
+{% extends "layout.html" %}
+{% block title %} Naming! {% end block%}
 
-    </head>
-    <body>
-        <h1>Hello Yall, Greetings from {{ name }}</h1>
-    </body>
-</html>
+{% block content %}
+    Hello Yall, Greetings from {{ name }}
+{% end block %}
+        

@@ -11,9 +11,9 @@ app = Flask(__name__)
 
 @app.route('/')
 @app.route('/<name>') # -- This line tells flask to capture anything that comes after the initial forward slash -- in this case 'name'
-def index(name):
+def index():
     # name = request.args.get('name', name) # -- Therefore we can actually get rid of this line to clean up the code
-    return   render_template("name.html", name=name)
+    return   render_template("index.html")
 
 @app.route('/add/<int:num1>/<int:num2>')
 def add(num1, num2):
